@@ -103,14 +103,21 @@ if __name__ == '__main__':
 
 В проекте следующая структура файлов и директорий:
 
-- **api/**: все что нужно для API 
-  - **data_model/**: Модели для валидации данных (Pydantic)
-  - **router/**: Роутеры (FastAPI)
-- **db/**: Подключение к БД и модели (SQLAlchemy)
-- **manager/**: Менеджеры для связки web и DB (DAL), тут выполняется бизнеc логика
-- **migrations**: Миграции (Alembic)
-- **test**: тесты (Pytest)
-- etc...
+- **`api/`**: все что нужно для API 
+  - **`data_model/`**: Модели для валидации данных (Pydantic)
+  - **`router/`**: Роутеры (FastAPI)
+- **`db/`**: Подключение к БД и модели (SQLAlchemy)
+- **`manager/`**: Менеджеры для связки web и DB (DAL), тут выполняется бизнеc логика
+- **`migrations`**: Миграции (Alembic)
+- `test/`: тесты (Pytest)
+- `main.py` - точка входа в приложение
+- `docker-compose.yml` - что поднять все в контейнерах
+- `docker-compose.local.yml` - поднять только DB
+- `settings.py` - настройки и получение ENV переменных
+- `*.ini` - конфигурационные файлы
+- `.env.*` - файлы с настройками окружения
+- `Dockerfile` - для сервиса app в `docker-compose.yml`
+- `requirements.txt` - список зависимостей
 # Модели данных
 
 ### Product
