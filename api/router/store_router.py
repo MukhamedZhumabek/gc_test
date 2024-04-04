@@ -11,7 +11,7 @@ store_router = APIRouter(tags=['store'])
 @store_router.get("/{store_id}", response_model=StoreResponse)
 async def get(store_id: int, db_session: AsyncSession = Depends(get_db_session)) -> StoreResponse:
     """
-    Get Store by external id
+    Get Store by id
     """
     store = await Manager(db_session).get_store_by_id(store_id=store_id)
 
