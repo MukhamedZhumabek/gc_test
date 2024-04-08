@@ -47,7 +47,7 @@ docker-compose up -d
 docker-compose exec app python -m pytest -v
 ```
 
-### 4. FastApi предостовляет swagger из коробки 
+### 4. У FastApi есть swagger из коробки 
 >[Потыкать API](http://127.0.0.1:8000/docs)
 ---
 ## Развернуть локально для разработки
